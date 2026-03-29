@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahalakshmi Plywood | Pro Business System</title>
+<meta name="description" content="Premium plywood store with full business system">
+
+<!-- LINK CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h2>Mahalakshmi Plywood</h2>
+<input id="search" class="search" placeholder="Search products...">
+<nav>
+<a href="#products">Products</a>
+<a href="#admin">Admin</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Premium Plywood Store</h1>
+<p>Order • Track • Manage • Grow</p>
+</div>
+
+<div id="products" class="grid"></div>
+
+<div class="section">
+<h3>Track Order</h3>
+<input id="trackId" placeholder="Order ID">
+<button class="btn" onclick="trackOrder()">Track</button>
+<p id="trackResult"></p>
+</div>
+
+<div class="section">
+<h3>Invoice</h3>
+<input id="custName" placeholder="Customer Name">
+<input id="amount" placeholder="Amount">
+<button class="btn" onclick="generateInvoice()">Generate</button>
+<div id="invoice"></div>
+</div>
+
+<div class="section">
+<h3>Customers</h3>
+<input id="cname" placeholder="Name">
+<input id="cphone" placeholder="Phone">
+<button class="btn" onclick="addCustomer()">Add</button>
+<div id="customerList"></div>
+</div>
+
+<div class="section">
+<h3>Dealer Network</h3>
+<input id="dname" placeholder="Dealer Name">
+<input id="darea" placeholder="Area">
+<button class="btn" onclick="addDealer()">Add</button>
+<div id="dealerList"></div>
+</div>
+
+<div class="section" id="admin">
+<h3>Admin Login</h3>
+<input id="user" placeholder="Username">
+<input id="pass" type="password" placeholder="Password">
+<button class="btn" onclick="login()">Login</button>
+
+<div id="panel" style="display:none">
+<h4>Add Product</h4>
+<input id="pname" placeholder="Name">
+<input id="pprice" placeholder="Price">
+<button onclick="addProduct()">Add</button>
+</div>
+</div>
+
+<!-- LINK JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
